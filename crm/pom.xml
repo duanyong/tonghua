@@ -62,7 +62,9 @@
     <repositories>
         <repository>
             <id>me.duanyong</id>
-            <url>https://raw.github.com/duanyong/handswork/snapshot</url>
+            <!--<url>https://raw.github.com/duanyong/handswork/snapshot</url>-->
+            <!--<url>file:///Users/duanyong/workspace/handswork/target/repository/handswork/snapshot</url>-->
+            <url>file:///Users/duanyong/workspace/handswork/target/repository</url>
             <snapshots>
                 <enabled>true</enabled>
                 <updatePolicy>always</updatePolicy>
@@ -88,13 +90,12 @@
             <systemPath>${pom.basedir}/web/WEB-INF/libs/aspose-cells-8.9.1.jar</systemPath>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/springloaded -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>springloaded</artifactId>
-            <version>1.2.6.RELEASE</version>
-        </dependency>
-
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/springloaded &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>springloaded</artifactId>-->
+            <!--<version>1.2.6.RELEASE</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>junit</groupId>
@@ -103,29 +104,67 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- 开始 JETTY -->
-        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-webapp -->
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
         <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-webapp</artifactId>
-            <version>9.3.11.v20160721</version>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.1</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
         <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-server</artifactId>
-            <version>9.3.11.v20160721</version>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>1.3.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>4.3.2.RELEASE</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>4.3.2.RELEASE</version>
+        </dependency>
+
+
+        <!--&lt;!&ndash; 开始 JETTY &ndash;&gt;-->
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-webapp &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.eclipse.jetty</groupId>-->
+            <!--<artifactId>jetty-webapp</artifactId>-->
+            <!--<version>9.3.11.v20160721</version>-->
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.eclipse.jetty</groupId>-->
+            <!--<artifactId>jetty-server</artifactId>-->
+            <!--<version>9.3.11.v20160721</version>-->
+        <!--</dependency>-->
 
 
         <!-- 开始 Spring -->
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-            <version>4.3.2.RELEASE</version>
-        </dependency>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-core &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-core</artifactId>-->
+            <!--<version>4.3.2.RELEASE</version>-->
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-webmvc &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-webmvc</artifactId>-->
+            <!--<version>4.3.2.RELEASE</version>-->
+        <!--</dependency>-->
+
 
         <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
         <dependency>
@@ -147,11 +186,11 @@
             <version>1.3.1</version>
         </dependency>
 
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.4</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>commons-io</groupId>-->
+            <!--<artifactId>commons-io</artifactId>-->
+            <!--<version>2.4</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>com.qiniu</groupId>
@@ -160,111 +199,101 @@
         </dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>4.3.2.RELEASE</version>
-        </dependency>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-context &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-context</artifactId>-->
+            <!--<version>4.3.2.RELEASE</version>-->
+        <!--</dependency>-->
 
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-context-support &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-context-support</artifactId>-->
+            <!--<version>4.3.3.RELEASE</version>-->
+        <!--</dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>4.3.2.RELEASE</version>
-        </dependency>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-web &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-web</artifactId>-->
+            <!--<version>4.3.2.RELEASE</version>-->
+        <!--</dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context-support</artifactId>
-            <version>4.3.3.RELEASE</version>
-        </dependency>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-beans &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-beans</artifactId>-->
+            <!--<version>4.3.2.RELEASE</version>-->
+        <!--</dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-web</artifactId>
-            <version>4.3.2.RELEASE</version>
-        </dependency>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-aop &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-aop</artifactId>-->
+            <!--<version>4.3.2.RELEASE</version>-->
+        <!--</dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-beans</artifactId>
-            <version>4.3.2.RELEASE</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-aop -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aop</artifactId>
-            <version>4.3.2.RELEASE</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-            <version>4.3.2.RELEASE</version>
-        </dependency>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-orm &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-orm</artifactId>-->
+            <!--<version>4.3.2.RELEASE</version>-->
+        <!--</dependency>-->
 
         <!-- 结束 Spring -->
 
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-beans -->
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.4.1</version>
-        </dependency>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-beans &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.mybatis</groupId>-->
+            <!--<artifactId>mybatis</artifactId>-->
+            <!--<version>3.4.1</version>-->
+        <!--</dependency>-->
 
-        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis-spring</artifactId>
-            <version>1.3.0</version>
-        </dependency>
-
-
-
-        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>6.0.3</version>
-        </dependency>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.mybatis/mybatis-spring &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.mybatis</groupId>-->
+            <!--<artifactId>mybatis-spring</artifactId>-->
+            <!--<version>1.3.0</version>-->
+        <!--</dependency>-->
 
 
-
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.6.2</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-api</artifactId>
-            <version>2.6.2</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-slf4j-impl</artifactId>
-            <version>2.7</version>
-        </dependency>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/mysql/mysql-connector-java &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>mysql</groupId>-->
+            <!--<artifactId>mysql-connector-java</artifactId>-->
+            <!--<version>6.0.3</version>-->
+        <!--</dependency>-->
 
 
-        <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
-        <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
-            <version>2.3.25-incubating</version>
-        </dependency>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.logging.log4j</groupId>-->
+            <!--<artifactId>log4j-core</artifactId>-->
+            <!--<version>2.6.2</version>-->
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.logging.log4j</groupId>-->
+            <!--<artifactId>log4j-api</artifactId>-->
+            <!--<version>2.6.2</version>-->
+        <!--</dependency>-->
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.apache.logging.log4j</groupId>-->
+            <!--<artifactId>log4j-slf4j-impl</artifactId>-->
+            <!--<version>2.7</version>-->
+        <!--</dependency>-->
+
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.freemarker/freemarker &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.freemarker</groupId>-->
+            <!--<artifactId>freemarker</artifactId>-->
+            <!--<version>2.3.25-incubating</version>-->
+        <!--</dependency>-->
 
         <!-- https://mvnrepository.com/artifact/ognl/ognl -->
         <!--<dependency>-->
@@ -274,22 +303,22 @@
         <!--</dependency>-->
 
 
-        <!-- 开始 数据库  -->
-        <!-- https://mvnrepository.com/artifact/c3p0/c3p0 -->
-        <dependency>
-            <groupId>c3p0</groupId>
-            <artifactId>c3p0</artifactId>
-            <version>0.9.1.2</version>
-        </dependency>
-        <!-- 结束 数据库  -->
+        <!--&lt;!&ndash; 开始 数据库  &ndash;&gt;-->
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/c3p0/c3p0 &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>c3p0</groupId>-->
+            <!--<artifactId>c3p0</artifactId>-->
+            <!--<version>0.9.1.2</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash; 结束 数据库  &ndash;&gt;-->
 
 
-        <!-- https://mvnrepository.com/artifact/javax.persistence/persistence-api -->
-        <dependency>
-            <groupId>javax.persistence</groupId>
-            <artifactId>persistence-api</artifactId>
-            <version>1.0.2</version>
-        </dependency>
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/javax.persistence/persistence-api &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>javax.persistence</groupId>-->
+            <!--<artifactId>persistence-api</artifactId>-->
+            <!--<version>1.0.2</version>-->
+        <!--</dependency>-->
 
 
     </dependencies>

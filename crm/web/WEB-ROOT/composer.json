@@ -1,0 +1,31 @@
+{
+  "name": "duanyong/tonghua",
+  "description": "...",
+  "keywords": [
+    "css",
+    "js",
+    "less",
+    "ng2",
+
+    "java"
+  ],
+  "homepage": "http://duanyong.me",
+  "authors": [
+    {
+      "name": "tony duan",
+      "email": "coderduan@gmail.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/duanyong/tonghua/issues"
+  },
+  "license": "MIT",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "master"
+    }
+  },
+  "replace": {
+    "twitter/bootstrap": "self.version"
+  }
+}
