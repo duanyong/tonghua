@@ -1,35 +1,12 @@
 {
-  "name": "tonghua crm",
+  "name": "tonghua_crm",
   "description": "...",
   "version": "0.0.1",
-  "keywords": [
-    "css",
-    "less",
-    "mobile-first",
-    "responsive",
-    "front-end",
-    "framework",
-    "web"
-  ],
-  "homepage": "http://getbootstrap.com",
-  "author": "Twitter, Inc.",
-  "scripts": {
-    "test": "grunt test"
-  },
-  "style": "dist/css/bootstrap.css",
-  "less": "less/bootstrap.less",
-  "main": "./dist/js/npm",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twbs/bootstrap.git"
+    "url": "https://github.com/duanyong/tonghua.git"
   },
-  "bugs": {
-    "url": "https://github.com/twbs/bootstrap/issues"
-  },
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/twbs/bootstrap/blob/master/LICENSE"
-  },
+
   "devDependencies": {
     "btoa": "~1.1.2",
     "glob": "~4.0.6",
@@ -59,24 +36,5 @@
     "npm-shrinkwrap": "~4.0.0",
     "remarkable": "^1.2.2",
     "time-grunt": "~1.0.0"
-  },
-  "engines": {
-    "node": "~0.10.1"
-  },
-  "jspm": {
-    "main": "js/bootstrap",
-    "directories": {
-      "example": "examples",
-      "lib": "dist"
-    },
-    "shim": {
-      "js/bootstrap": {
-        "imports": "jquery",
-        "exports": "$"
-      }
-    },
-    "buildConfig": {
-      "uglify": true
-    }
   }
 }

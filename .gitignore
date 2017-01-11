@@ -2,6 +2,8 @@
 
 # .gitignore for maven 
 target/
+release/
+node_modules/
 *.releaseBackup
 
 # web application files
